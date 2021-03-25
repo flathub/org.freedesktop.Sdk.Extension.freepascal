@@ -73,11 +73,8 @@ modules:
       - make install
     sources: 
       - type: archive
-        url: 'https://downloads.sourceforge.net/project/lazarus/Lazarus%20Zip%20_%20GZip/Lazarus%202.0.10/lazarus-2.0.10-2.tar.gz'
-        sha256: 64d5626468dd24a3332b205f3abd0a581ab7de1b060a2d57e21864066cfd43b7
-      
-      - type: patch
-        path: Fix-lazbuild-random-crash.patch
+        url: 'https://downloads.sourceforge.net/project/lazarus/Lazarus%20Zip%20_%20GZip/Lazarus%202.0.12/lazarus-2.0.12.tar.gz'
+        sha256: ba6cef7f823a2d28166229982efc926039d42313c40e22fe0c6776c13d0015b2
 
   - name: script
     buildsystem: simple
