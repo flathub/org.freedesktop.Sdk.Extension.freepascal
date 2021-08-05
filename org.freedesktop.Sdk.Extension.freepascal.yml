@@ -10,7 +10,7 @@ modules:
   - name: fpc
     build-options:
       env: 
-        - fpcver=3.2.0
+        - fpcver=3.2.2
         - PREFIX=/usr/lib/sdk/freepascal
       arch:
         aarch64:
@@ -44,18 +44,18 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: 'https://downloads.sourceforge.net/project/freepascal/Linux/3.2.0/fpc-3.2.0-x86_64-linux.tar'
-        sha256: d19252e6cfe52f1217f4822a548ee699eaa7e044807aaf8429a0532cb7e4cb3d
+        url: 'ftp://mirror.freemirror.org/pub/fpc/dist/3.2.2/x86_64-linux/fpc-3.2.2.x86_64-linux.tar'
+        sha256: 5adac308a5534b6a76446d8311fc340747cbb7edeaacfe6b651493ff3fe31e83
 
       - type: archive
         only-arches:
           - aarch64
-        url: 'https://downloads.sourceforge.net/project/freepascal/Linux/3.2.0/fpc-3.2.0.aarch64-linux.tar'
-        sha256: e16411a8ca6cf7817d5fc95bfc39919a306157c8f9f09a9ea616d5f19e0d88c0
+        url: 'ftp://mirror.freemirror.org/pub/fpc/dist/3.2.2/aarch64-linux/fpc-3.2.2.aarch64-linux.tar'
+        sha256: b39470f9b6b5b82f50fc8680a5da37d2834f2129c65c24c5628a80894d565451
 
       - type: archive
-        url: 'https://downloads.sourceforge.net/project/freepascal/Source/3.2.0/fpcbuild-3.2.0.tar.gz'
-        sha256: f9b914eace989a023fb953da203dc0d973b44487568b4138c7d5b9613d7d6838
+        url: 'ftp://mirror.freemirror.org/pub/fpc/dist/3.2.2/source/fpcbuild-3.2.2.tar.gz'
+        sha256: 85ef993043bb83f999e2212f1bca766eb71f6f973d362e2290475dbaaf50161f
 
   - name: lazarus
     build-options:
@@ -73,8 +73,8 @@ modules:
       - make install
     sources: 
       - type: archive
-        url: 'https://downloads.sourceforge.net/project/lazarus/Lazarus%20Zip%20_%20GZip/Lazarus%202.0.12/lazarus-2.0.12.tar.gz'
-        sha256: ba6cef7f823a2d28166229982efc926039d42313c40e22fe0c6776c13d0015b2
+        url: 'https://gitlab.com/freepascal.org/lazarus/lazarus/-/archive/lazarus_2_2_0_RC1/lazarus-lazarus_2_2_0_RC1.tar.gz'
+        sha256: dd2c6c238dc8b065d049324173bbd5cb0888c597e4196e1f587608580964bc4f
 
   - name: script
     buildsystem: simple
