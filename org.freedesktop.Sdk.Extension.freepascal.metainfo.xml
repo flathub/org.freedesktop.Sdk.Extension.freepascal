@@ -8,6 +8,6 @@
   <summary>A compiler for the closely related programming-language dialects Pascal and Object Pascal</summary>
   <url type="homepage">http://www.freepascal.org/</url>
   <releases>
-    <release version="3.2.0" date="2021-01-23"/>
+    <release version="3.2.2" date="2021-08-05"/>
   </releases>
 </component>
