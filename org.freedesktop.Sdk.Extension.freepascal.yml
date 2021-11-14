@@ -73,8 +73,8 @@ modules:
       - make install
     sources: 
       - type: archive
-        url: 'https://gitlab.com/freepascal.org/lazarus/lazarus/-/archive/lazarus_2_2_0_RC1/lazarus-lazarus_2_2_0_RC1.tar.gz'
-        sha256: dd2c6c238dc8b065d049324173bbd5cb0888c597e4196e1f587608580964bc4f
+        url: 'https://gitlab.com/freepascal.org/lazarus/lazarus/-/archive/lazarus_2_2_0_RC2/lazarus-lazarus_2_2_0_RC2.tar.gz'
+        sha256: a79e35b588ec732023e29a72bb562d474bb378499f5c54a706409dc36319b098
 
   - name: script
     buildsystem: simple
