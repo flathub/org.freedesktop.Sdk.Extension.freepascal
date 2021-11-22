@@ -40,6 +40,8 @@ modules:
       -  ${PREFIX}/lib/fpc/${fpcver}/samplecfg ${PREFIX}/lib/fpc/${fpcver} ${PREFIX}/etc 
       -  echo '-Fl/app/lib' >> ${PREFIX}/etc/fpc.cfg
       -  ln -s ../lib/fpc/${fpcver}/${PPNAME} ${PREFIX}/bin/${PPNAME}
+      # fix not found ppcaarch64
+      -  ln -s ppca64 ${PREFIX}/bin/ppcaarch64
     sources:
       - type: archive
         only-arches:
