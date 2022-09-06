@@ -1,7 +1,7 @@
 app-id: org.freedesktop.Sdk.Extension.freepascal
-branch: '21.08'
+branch: '22.08'
 runtime: org.freedesktop.Sdk
-runtime-version: '21.08'
+runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 build-extension: true
 separate-locales: false
@@ -81,7 +81,6 @@ modules:
   - name: script
     buildsystem: simple
     build-commands:
-      - install -Dm644 environmentoptions.xml -t ${FLATPAK_DEST}/
       - install -Dm755 {enable,install-sdk}.sh -t ${FLATPAK_DEST}/
       - install -Dm644 ${FLATPAK_ID}.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo
       - appstream-compose --basename=${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak
@@ -99,11 +98,6 @@ modules:
           - export PPC_CONFIG_PATH=/usr/lib/sdk/freepascal/etc
           - export FPCDIR=/usr/lib/sdk/freepascal/fpcsrc
           - export FPC_DIR=$FPCDIR
-          - '[ ! -e "$HOME/.lazarus/environmentoptions.xml" ] && install -Dm644 /usr/lib/sdk/freepascal/environmentoptions.xml -t "$HOME/.lazarus"'
 
       - type: file
         path: org.freedesktop.Sdk.Extension.freepascal.metainfo.xml
-
-      - type: file
-        path: lazarus-environmentoptions.xml
-        dest-filename: environmentoptions.xml
