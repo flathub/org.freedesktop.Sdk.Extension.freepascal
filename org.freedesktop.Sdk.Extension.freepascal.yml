@@ -59,6 +59,10 @@ modules:
         url: 'ftp://mirror.freemirror.org/pub/fpc/dist/3.2.2/source/fpcbuild-3.2.2.tar.gz'
         sha256: 85ef993043bb83f999e2212f1bca766eb71f6f973d362e2290475dbaaf50161f
 
+      - type: patch
+        options: ['-d', 'fpcsrc']
+        path: fpc-3.2.0--glibc-2.34.patch
+
   - name: lazarus
     build-options:
       append-path: /usr/lib/sdk/freepascal/bin
