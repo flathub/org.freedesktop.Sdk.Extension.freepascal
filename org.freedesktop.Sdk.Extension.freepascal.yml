@@ -85,6 +85,10 @@ modules:
       - type: archive
         url: 'https://gitlab.com/freepascal.org/lazarus/lazarus/-/archive/lazarus_2_2_2/lazarus-lazarus_2_2_2.tar.gz'
         sha256: 8304320a5eb9ef81f5c335a895082624c73bb295fca81d86ae8ebfd24a616d20
+        x-checker-data:
+          type: anitya
+          project-id: 1538
+          url-template: 'https://downloads.sourceforge.net/project/lazarus/Lazarus%20Zip%20_%20GZip/Lazarus%20$major.$minor.$patch/lazarus-$version.tar.gz'
 
   - name: script
     buildsystem: simple
