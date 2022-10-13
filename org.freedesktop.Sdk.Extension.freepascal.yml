@@ -108,7 +108,7 @@ modules:
           - export FPC_DIR=$FPCDIR
           - export LAZARUSDIR=/usr/lib/sdk/freepascal/share/lazarus
           # "$HOME/.lazarus" is lazarus's default 'primary-config-path'
-          - '[ ! -e "$HOME/.lazarus/environmentoptions.xml" ] && install -Dm644 $LAZARUSDIR/environmentoptions.xml -t "$HOME/.lazarus"'
+          - '[ -e "$HOME/.lazarus/environmentoptions.xml" ] || install -Dm644 $LAZARUSDIR/environmentoptions.xml -t "$HOME/.lazarus"'
 
       - type: file
         path: org.freedesktop.Sdk.Extension.freepascal.metainfo.xml
