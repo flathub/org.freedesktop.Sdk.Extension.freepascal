@@ -80,11 +80,15 @@ modules:
       - make install
       - sed -i -e "s#__LAZARUSDIR__#$LAZARUSDIR/#" -e "s#__FPCSRCDIR__#$FPCDIR/#" -e "s#/usr/bin/fpc#$INSTALL_PREFIX/bin/fpc#"
         tools/install/linux/environmentoptions.xml
-      - install -Dm644 -t $INSTALL_PREFIX/lazarus tools/install/linux/environmentoptions.xml
+      - install -Dm644 -t $LAZARUSDIR tools/install/linux/environmentoptions.xml
     sources: 
       - type: archive
-        url: 'https://gitlab.com/freepascal.org/lazarus/lazarus/-/archive/lazarus_2_2_2/lazarus-lazarus_2_2_2.tar.gz'
-        sha256: 8304320a5eb9ef81f5c335a895082624c73bb295fca81d86ae8ebfd24a616d20
+        url: 'https://downloads.sourceforge.net/project/lazarus/Lazarus%20Zip%20_%20GZip/Lazarus%202.2.4/lazarus-2.2.4-0.tar.gz'
+        sha256: b84093218181f66b545218d1aaaf62a8bfb6abd40beba32387253d66fc5bc24c
+        x-checker-data:
+          type: anitya
+          project-id: 1538
+          url-template: 'https://downloads.sourceforge.net/project/lazarus/Lazarus%20Zip%20_%20GZip/Lazarus%20$major.$minor.$patch/lazarus-$version.tar.gz'
 
   - name: script
     buildsystem: simple
