@@ -83,8 +83,8 @@ modules:
       - install -Dm644 -t $LAZARUSDIR tools/install/linux/environmentoptions.xml
     sources: 
       - type: archive
-        url: 'https://downloads.sourceforge.net/project/lazarus/Lazarus%20Zip%20_%20GZip/Lazarus%203.2/lazarus-3.2-0.tar.gz'
-        sha256: 69f43f0a10b9e09deea5f35094c73b84464b82d3f40d8a2fcfcb5a5ab03c6edf
+        url: 'https://sourceforge.net/projects/lazarus/files/Lazarus%20Zip%20_%20GZip/Lazarus%203.4/lazarus-3.4-0.tar.gz'
+        sha256: b27c0feabf90ef49034acffb71947d3ee77d4ccf597d348473f5c5a2485e80ff
         x-checker-data:
           type: anitya
           project-id: 1538
