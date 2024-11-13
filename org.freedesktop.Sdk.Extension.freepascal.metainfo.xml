@@ -6,7 +6,7 @@
   <project_license>GPL-2.0-only</project_license>
   <name>Free Pascal Compiler and Lazarus</name>
   <summary>A compiler for the closely related programming-language dialects Pascal and Object Pascal</summary>
-  <url type="homepage">http://www.freepascal.org/</url>
+  <url type="homepage">https://www.freepascal.org/</url>
   <releases>
     <release version="3.2.2" date="2021-08-05"/>
   </releases>
