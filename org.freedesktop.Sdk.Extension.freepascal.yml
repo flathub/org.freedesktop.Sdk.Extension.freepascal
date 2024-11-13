@@ -87,12 +87,12 @@ modules:
       - install -Dm644 -t $LAZARUSDIR tools/install/linux/environmentoptions.xml
     sources:
       - type: archive
-        url: 'https://sourceforge.net/projects/lazarus/files/Lazarus%20Zip%20_%20GZip/Lazarus%203.4/lazarus-3.4-0.tar.gz'
-        sha256: b27c0feabf90ef49034acffb71947d3ee77d4ccf597d348473f5c5a2485e80ff
+        url: 'https://sourceforge.net/projects/lazarus/files/Lazarus%20Zip%20_%20GZip/Lazarus%203.6/lazarus-3.6-0.tar.gz'
+        sha256: e65b90367f63bf17cb7bf35f5be69c9ef704ca494e91d8c67d072e3373fab085
         x-checker-data:
           type: anitya
           project-id: 1538
-          url-template: 'https://downloads.sourceforge.net/project/lazarus/Lazarus%20Zip%20_%20GZip/Lazarus%20$major.$minor/lazarus-$version.tar.gz'
+          url-template: 'https://sourceforge.net/projects/lazarus/files/Lazarus%20Zip%20_%20GZip/Lazarus%20$major.$minor/lazarus-$version-0.tar.gz'
 
   - name: script
     buildsystem: simple
