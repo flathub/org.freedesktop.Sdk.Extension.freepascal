@@ -87,10 +87,6 @@ modules:
       - type: archive
         url: https://sourceforge.net/projects/lazarus/files/Lazarus%20Zip%20_%20GZip/Lazarus%203.8/lazarus-3.8-0.tar.gz
         sha256: 1da826fefa4175347f8e43324583b12d76f3ef56ebe48bd5fa6e847ec85295fc
-        x-checker-data:
-          type: anitya
-          project-id: 1538
-          url-template: https://sourceforge.net/projects/lazarus/files/Lazarus%20Zip%20_%20GZip/Lazarus%20$major.$minor/lazarus-$version-0.tar.gz
 
   - name: script
     buildsystem: simple
